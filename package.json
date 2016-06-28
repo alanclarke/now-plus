@@ -1,0 +1,28 @@
+{
+  "name": "date-plus",
+  "version": "1.0.0",
+  "description": "simple lib for computing relative dates",
+  "main": "index.js",
+  "author": "Jake Rowsell",
+  "standard": {
+    "ignore": [
+      "node_modules"
+    ],
+    "globals": [
+      "describe",
+      "it",
+      "beforeEach",
+      "afterEach",
+      "before",
+      "after"
+    ]
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
+  "author": "",
+  "license": "UNLICENSED"
+}

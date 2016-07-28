@@ -1,4 +1,4 @@
-var now = require('../now/index')
+var now = require('../lib/index')
 var expect = require('chai').expect
 var ms = {}
 ms.minute = 1000 * 60
@@ -12,13 +12,15 @@ describe('now-plus', function () {
   beforeEach(function () {
     time = new Date()
   })
+
   describe('now', function () {
     it('should return the current date', function () {
-      expect(+now()).to.be.closeTo(+time, 1)
-      expect(+now.plus(0, 'minute')).to.be.closeTo(+time, 5)
-      expect(+now.minus(0, 'minute')).to.be.closeTo(+time, 5)
+      expect(Number(now())).to.be.closeTo(Number(time), 5)
+      expect(Number(now.plus(0, 'minute'))).to.be.closeTo(Number(time), 5)
+      expect(Number(now.minus(0, 'minute'))).to.be.closeTo(Number(time), 5)
     })
   })
+
   describe('now.plus', function () {
     it('should return the current date plus 1 minute', function () {
       expect(now.get(time).plus(1, 'minute')).to.eql(datePlus(time, ms.minute))
@@ -41,9 +43,10 @@ describe('now-plus', function () {
       expect(now.get(time).plus(1, 'years')).to.eql(datePlus(time, ms.year))
     })
     it('should return a date object', function () {
-      expect(now.minus(1, 'minute')).to.be.instanceof(Date)
+      expect(now.plus(1, 'minute')).to.be.instanceof(Date)
     })
   })
+
   describe('now.minus', function () {
     it('should return the current date minus 1 minute', function () {
       expect(now.get(time).minus(1, 'minute')).to.eql(datePlus(time, -ms.minute))

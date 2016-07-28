@@ -1,0 +1,58 @@
+{
+  "name": "now-plus",
+  "version": "1.0.0",
+  "description": "simple lib for computing relative dates",
+  "main": "index.js",
+  "author": "Jake Rowsell <jake@qubit.com> (qubit.com)",
+  "contributors": [
+    "Alan Clarke <alan@qubit.com> (qubit.com)"
+  ],
+  "standard": {
+    "ignore": [
+      "node_modules"
+    ],
+    "globals": [
+      "describe",
+      "it",
+      "beforeEach",
+      "afterEach",
+      "before",
+      "after"
+    ]
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/karma start --single-run && node_modules/.bin/standard"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "isparta": "^4.0.0",
+    "isparta-loader": "^2.0.0",
+    "karma": "^1.1.2",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-coverage": "^1.1.1",
+    "karma-mocha": "^1.1.1",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.5.3",
+    "standard": "^7.1.2",
+    "webpack": "^1.13.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qubitdigital/now-plus.git"
+  },
+  "keywords": [
+    "now",
+    "date",
+    "date-adder"
+  ],
+  "bugs": {
+    "url": "https://github.com/qubitdigital/now-plus/issues"
+  },
+  "homepage": "https://github.com/qubitdigital/now-plus#readme"
+}

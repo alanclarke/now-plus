@@ -44,7 +44,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qubitdigital/now-plus.git"
+    "url": "git+https://github.com/QubitProducts/now-plus.git"
   },
   "keywords": [
     "now",
@@ -52,7 +52,7 @@
     "date-adder"
   ],
   "bugs": {
-    "url": "https://github.com/qubitdigital/now-plus/issues"
+    "url": "https://github.com/QubitProducts/now-plus/issues"
   },
-  "homepage": "https://github.com/qubitdigital/now-plus#readme"
+  "homepage": "https://github.com/QubitProducts/now-plus#readme"
 }

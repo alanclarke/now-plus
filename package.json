@@ -3,9 +3,9 @@
   "version": "1.0.3",
   "description": "simple lib for computing relative dates",
   "main": "lib/index.js",
-  "author": "Jake Rowsell <jake@qubit.com> (qubit.com)",
+  "author": "Alan Clarke <alan@qubit.com> (qubit.com)",
   "contributors": [
-    "Alan Clarke <alan@qubit.com> (qubit.com)"
+    "Jake Rowsell <jake@qubit.com> (qubit.com)"
   ],
   "standard": {
     "ignore": [
@@ -21,10 +21,11 @@
     ]
   },
   "directories": {
+    "lib": "lib",
     "test": "test"
   },
   "scripts": {
-    "test": "node_modules/.bin/karma start --single-run && node_modules/.bin/standard"
+    "test": "karma start --single-run && node_modules/.bin/standard"
   },
   "license": "UNLICENSED",
   "dependencies": {},

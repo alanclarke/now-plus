@@ -1,6 +1,6 @@
 {
   "name": "now-plus",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "simple lib for computing relative dates",
   "main": "lib/index.js",
   "author": "Alan Clarke <alan@qubit.com> (qubit.com)",

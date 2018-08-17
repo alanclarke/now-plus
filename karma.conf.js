@@ -1,29 +1,12 @@
-var path = require('path')
 module.exports = function (config) {
   config.set({
     frameworks: ['mocha'],
-    files: [ 'test/**/test-*' ],
-    preprocessors: {
-      'test/**/test-*': ['webpack', 'sourcemap']
+    files: [ 'test/test-*' ],
+    preprocessors: { '/**/*.js': ['webpack', 'sourcemap'] },
+    webpackMiddleware: {
+      stats: 'errors-only',
+      logLevel: 'error'
     },
-    webpack: {
-      watch: true,
-      devtool: 'inline-source-map',
-      module: {
-        loaders: [{
-          include: [ path.resolve('lib') ],
-          loader: 'isparta'
-        }]
-      }
-    },
-    webpackServer: {
-      quiet: true,
-      noInfo: true
-    },
-    browsers: ['Chrome'],
-    reporters: ['progress', 'coverage'],
-    coverageReporter: {
-      reporters: [{ type: 'text' }, { type: 'html' }]
-    }
+    browsers: ['Chrome']
   })
 }

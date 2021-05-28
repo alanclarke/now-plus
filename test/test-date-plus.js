@@ -16,8 +16,8 @@ describe('now-plus', function () {
   describe('now', function () {
     it('should return the current date', function () {
       expect(Number(now())).to.be.closeTo(Number(new Date()), 5)
-      expect(Number(now.plus(0, 'minutes'))).to.be.closeTo(Number(new Date()), 5)
-      expect(Number(now.minus(0, 'minutes'))).to.be.closeTo(Number(new Date()), 5)
+      expect(Number(now.plus(0, 'minutes'))).to.be.closeTo(Number(new Date()), 10)
+      expect(Number(now.minus(0, 'minutes'))).to.be.closeTo(Number(new Date()), 10)
     })
   })
 
